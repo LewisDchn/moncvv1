@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Mon Web CV</title>
+    <script src="https://kit.fontawesome.com/cd62dda54d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500;700&display=swap" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="assets/css/styleindex.css" />
+</head>
+
+<body class="container" id="fond">
+    <div class="row">
+        <nav class="mt-lg-5 col-12 navbar fixed-top navbar-expand-md navbar-dark bg-dark ">
+            <a class="d-md-none navbar-brand " href="#">Lewis Duchesne</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item"><a class="nav-link" href="accueil.html">ACCUEIL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exp.html">EXPÉRIENCES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form.html">FORMATIONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="comp.html">COMPÉTENCES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PROJETS</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    <li class="nav-item"><a class="btn btn-floating btn-lg btn-dl"><i
+                                class="fas fa-file-download"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row d-flex justify-content-md-center justify-content-lg-start">
+        <div class="mt-5 col-xs-12 col-sm-12 col-md-9 col-lg-4">
+            <!--card regular-->
+            <div class="card card1 testimonial-card">
+                <!--background-color-->
+                <div class="card-up indigo lighten-1"></div>
+                <!--card image-->
+                <div class="avatar mx-auto white">
+                    <img src="assets/img/face.jpg" class="rounded-circle" alt="normal">
+                    <div class="mask waves-effect rgba-white-slight"></div>
+                </div>
+                <!--/fin card image-->
+                <!--card content-->
+                <div class=" card-body">
+                    <h4 class="card-title"><strong>26 ans | Permis B</strong></h4>
+                    <h5>Développeur Web / Web Mobile</h5>
+                    <a class="btn btn-floating btn-lg btn-lk text-white"
+                        href="https://www.linkedin.com/in/lewis-duchesne/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-floating btn-lg btn-em text-white" href="mailto:lewis.duchesne@outlook.fr"><i
+                            class="fas fa-envelope"></i></a>
+                    <a class="btn btn-floating btn-lg btn-ph text-white" href="tel:+33625268846"><i
+                            class="fas fa-phone"></i></a>
+                    <h4>Situation Professionelle</h4>
+                    <p><img id="poste" src="assets/img/vert.png">En recherche d'emploi</p>
+                    <p><img id="poste" src="assets/img/poste.png">Formation en cours</p>
+                </div>
+            </div>
+        </div>
+        <section class="card1 mb-4 col-lg-8">
+            <h2 class="h1-responsive top font-weight-bold text-center my-4">Me Contacter</h2>
+            <p class="text-center w-responsive mx-auto mb-5">Avez-vous des questions ? N'hésitez pas à me contacter
+                directement. Je reviendrais vers vous le plus rapidement possible.</p>
+            <div class="row">
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Votre nom</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Votre mail</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Sujet</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                    <label for="message">Votre message</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary"
+                            onclick="document.getElementById('contact-form').submit();">Envoyer</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="btn btn-floating btn-lg btn-mp text-white" data-toggle="modal" data-target="#modalRegular"><i class="fas fa-map-marker-alt fa-2x"></i></a>
+                            <p>16 Rue Laisement<br> 60940 Angicourt</p>
+                        </li>
+                        <li> <a class="btn btn-floating btn-lg btn-ph text-white" href="tel:+33625268846"><i class="fas fa-phone mt-4 fa-2x"></i></a>
+                            <p>06 25 26 88 46</p>
+                        </li>
+                        <li><a class="btn btn-floating btn-lg btn-em text-white" href="mailto:lewis.duchesne@outlook.fr"><i class="fas fa-envelope mt-4 fa-2x"></i></a>
+                            <p>lewis.duchesne<br>@outlook.fr</p>
+                        </li>
+                    </ul>
+                    <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                  
+                      <!--Content-->
+                      <div class="modal-content">
+                  
+                        <!--Body-->
+                        <div class="modal-body mb-0 p-0">
+                  
+                          <!--Google map-->
+                          <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20807.8299379689!2d2.484894355860672!3d49.314686227417944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e635612e29c815%3A0x40af13e81644f30!2s60940%20Angicourt!5e0!3m2!1sfr!2sfr!4v1587053800813!5m2!1sfr!2sfr"
+                              frameborder="0" style="border:0" allowfullscreen></iframe>
+                          </div>
+                  
+                        </div>
+                  
+                        <!--Footer-->
+                        <div class="modal-footer justify-content-center">
+                  
+                          <button type="button" class="btn btn-info btn-md">Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
+                          <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
+                  
+                        </div>
+                  
+                      </div>
+                      <!--/.Content-->
+                  
+                    </div>
+                  </div>
+                  <!--Modal: Name-->
+                </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
