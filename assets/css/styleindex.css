@@ -1,12 +1,15 @@
+
 #fond {
     color:whitesmoke; 
     font-family: 'Alegreya Sans SC', sans-serif;
     text-align: center;
     background-image: url(../img/blackmarble.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
 *{
-    transition-duration: 0.8s;
-}
+    transition-duration: 0.5s;
+}   
 #arrow {
     height: 160px;
     width: 90px;
@@ -43,7 +46,11 @@ nav {
     .first{
         margin-top: 10em;
     }
+    .bot{
+        margin-bottom: 0em;
+    }
 }
+
 
 @media screen and ( max-width: 1000px){
     .card1 {
