@@ -4,7 +4,7 @@
     text-align: center;
     background-image: url(../img/blackmarble.png);
     background-size: cover;
-    background-attachment: fixed;
+ 
 }
 *{
     transition-duration: 0.5s;
