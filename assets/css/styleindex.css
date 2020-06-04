@@ -33,6 +33,9 @@ nav {
 .stars {
     float: right;
 }
+.nav-link{
+    padding: .75rem 1rem;
+}
 @media screen and (min-width: 1000px) {
     .top {
         margin-top: 9em;
